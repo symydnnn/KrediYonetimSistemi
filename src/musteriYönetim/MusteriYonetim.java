@@ -46,7 +46,7 @@ public class MusteriYonetim extends Musteri{
 		System.out.println("Müsteriler coklu ekleniyor...\n ");
 		for(Musteri musteri:musteriler) {
 			System.out.println(musteri.getAdSoyad()+" Eklendi.");
-			logger.log();
+			ekle(musteri);
 		}
 	}
 	
