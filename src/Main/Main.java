@@ -15,10 +15,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		Musteri musteriler[] = new Musteri [3];
-		MusteriYonetim kredi[] = {new MusteriYonetim(new AracKredisi()), new MusteriYonetim(new EvKredisi()),new MusteriYonetim(new IhtiyacKredisi())};
+		MusteriYonetim kredi[] = {new MusteriYonetim(null,new AracKredisi()), new MusteriYonetim(null,new EvKredisi()),new MusteriYonetim(null,new IhtiyacKredisi())};
 		KurumsalMusteri kmusteri[]= {new KurumsalMusteri(12345, "Seyma Aydin", 123456, "M0000"),new KurumsalMusteri(12347, "Turkan Kurt", 123456, "M0002")};
 		BireyselMusteri bmusteri[]= {new BireyselMusteri(12342, "Busra Can", 123456, "A0001"),new BireyselMusteri(12345, "Huseyin Cag", 123456, "A0003")};
-		MusteriYonetim yonetici[]= {new MusteriYonetim(new DatabaseLogger()),new MusteriYonetim(new FileLogger()),new MusteriYonetim(new SmsLogger())};
+		MusteriYonetim yonetici[]= {new MusteriYonetim(new DatabaseLogger(),null),new MusteriYonetim(new FileLogger(),null),new MusteriYonetim(new SmsLogger(),null)};
 		
 		musteriler[0]=kmusteri[0];
 		musteriler[1] = bmusteri[0];

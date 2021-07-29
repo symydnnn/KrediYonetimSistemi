@@ -7,17 +7,13 @@ import loglama.Logger;
 public class MusteriYonetim extends Musteri{
 	
 	private Logger logger;
-	
-	public MusteriYonetim(Logger logger) {
-		this.logger = logger;
-	}
-	
-	
 	private Kredi kredi;
 	
-	public MusteriYonetim(Kredi kredisi){
-		this.kredi= kredisi;
+	public MusteriYonetim(Logger logger,Kredi kredisi) {
+		this.logger = logger;
+		this.kredi=kredisi;
 	}
+	
 	
 	public void krediCesidi(Kredi kredisi) {
 			kredi.krediTuru();
